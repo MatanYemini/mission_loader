@@ -9,8 +9,8 @@ export async function server() {
 
   const host = serverConfig.host;
   const port = serverConfig.port;
-  const logger = Logger.getLogger();
 
+  const logger = Logger.getLogger();
   await InitializeMiddleWare.InitializeCommonMiddleware(app);
 
   app.all('*', async (req, res, next) => {
