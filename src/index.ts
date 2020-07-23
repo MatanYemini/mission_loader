@@ -1,10 +1,3 @@
-import { app } from './app';
+import { server } from './server';
 
-const start = async () => {
-  console.log('Starting up...');
-  app.listen(3000, () => {
-    console.log('running on port 3000!!');
-  });
-};
-
-start();
+server();
