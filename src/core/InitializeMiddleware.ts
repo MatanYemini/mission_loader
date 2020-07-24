@@ -1,5 +1,5 @@
 import { Express } from 'express';
-import { CommonMiddleware } from '../middlewares/CommonMiddleware';
+import { CommonMiddleware } from '../middlewares/common-middleware';
 
 export class InitializeMiddleWare {
   public static async InitializeCommonMiddleware(app: Express) {
